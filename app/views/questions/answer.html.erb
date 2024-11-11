@@ -1,0 +1,10 @@
+<div class ="container"><%
+if (params[:name] == "I am going to work")
+@useranswer = "Great !"
+else @useranswer = "I don't care, get dressed and go to work!"
+end %>
+
+<h1> <%=@useranswer %> </h1>
+
+<%= link_to "ask a new question", ask_path %>
+</div>
